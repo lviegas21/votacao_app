@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:flutter/widgets.dart';
 import 'package:votacao_app/presenter/login/widget/login_button.dart';
 
 class LoginPage extends StatefulWidget {

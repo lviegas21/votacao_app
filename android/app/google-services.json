@@ -12,7 +12,20 @@
           "package_name": "com.example.votacao_app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "97079900508-ch05sgfdto8r5t39cjlfsfi4havi76n6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.votacao_app",
+            "certificate_hash": "d910a5ee4098099118f62686ab7cf9268e759a26"
+          }
+        },
+        {
+          "client_id": "97079900508-t8fkjht14vjtvu94v834kesbf6nnj7gg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCslfNkAxBYtWafNJJkXqYoLWvJrLYvN0A"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97079900508-t8fkjht14vjtvu94v834kesbf6nnj7gg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "97079900508-4b5dv7jfhqonu0og75m1ls2sl5kq28g5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.votacaoApp"
+              }
+            }
+          ]
         }
       }
     }

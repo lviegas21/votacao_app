@@ -1,22 +1,26 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-//import 'package:flutter/widgets.dart';
 import 'package:votacao_app/service/app_firebase_auth.dart';
 
-class LoginButtom extends StatelessWidget {
-  const LoginButtom({super.key});
+class LoginButtom extends StatefulWidget {
+  const LoginButtom({
+    Key? key,
+  }) : super(key: key);
 
+  @override
+  State<LoginButtom> createState() => _LoginButtomState();
+}
+
+class _LoginButtomState extends State<LoginButtom> {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
+      color: Colors.amber,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
       padding: EdgeInsets.zero,
-      onPressed: AppFirebaseAuth.signInWithGoogleAndNavigate,
-      color: Colors.blue,
-      child: Container(
-        width: 218,
-        height: 47,
-        padding: const EdgeInsets.all(9),
-      ),
+      onPressed: () async {
+        await AppFirebaseAuth.signInWithGoogleAndNavigate();
+      },
     );
   }
 }

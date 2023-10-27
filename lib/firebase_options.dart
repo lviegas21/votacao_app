@@ -67,6 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '97079900508',
     projectId: 'igrejavotacao',
     storageBucket: 'igrejavotacao.appspot.com',
+    androidClientId: '97079900508-ch05sgfdto8r5t39cjlfsfi4havi76n6.apps.googleusercontent.com',
+    iosClientId: '97079900508-4b5dv7jfhqonu0og75m1ls2sl5kq28g5.apps.googleusercontent.com',
     iosBundleId: 'com.example.votacaoApp',
   );
 
@@ -76,6 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '97079900508',
     projectId: 'igrejavotacao',
     storageBucket: 'igrejavotacao.appspot.com',
+    androidClientId: '97079900508-ch05sgfdto8r5t39cjlfsfi4havi76n6.apps.googleusercontent.com',
+    iosClientId: '97079900508-p8hr7eid9002g4oupggm9jqkqpj2r9fm.apps.googleusercontent.com',
     iosBundleId: 'com.example.votacaoApp.RunnerTests',
   );
 }
