@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:votacao_app/presenter/login/widget/cadastrar_button.dart';
 import 'package:votacao_app/presenter/login/widget/login_button.dart';
 import 'package:votacao_app/presenter/login/widget/text_fild.dart';
 import 'package:votacao_app/shared/componets/theme/app_color.dart';
@@ -52,11 +53,16 @@ class _LoginPageState extends State<LoginPage> {
                     height: 10,
                   ),
                   InputField(
-                      prefixIcon: const Icon(Icons.lock), hintText: "Senha"),
+                    prefixIcon: const Icon(Icons.lock),
+                    hintText: "Senha",
+                    obscureSenha: true,
+                  ),
                   const SizedBox(
                     height: 40,
                   ),
-                  const LoginButtom()
+                  const LoginButtom(),
+                  const SizedBox(height: 20),
+                  const CadastrarButton()
                 ],
               ),
             ),
