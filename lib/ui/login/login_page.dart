@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:votacao_app/presenter/login/widget/cadastrar_button.dart';
-import 'package:votacao_app/presenter/login/widget/login_button.dart';
-import 'package:votacao_app/presenter/login/widget/text_fild.dart';
+import 'package:votacao_app/ui/login/widget/cadastrar_button.dart';
+import 'package:votacao_app/ui/login/widget/login_button.dart';
+import 'package:votacao_app/ui/login/widget/text_fild.dart';
 import 'package:votacao_app/shared/componets/theme/app_color.dart';
 
 class LoginPage extends StatefulWidget {
@@ -17,6 +17,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       backgroundColor: AppColor.backgroundLogin,
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Padding(
@@ -31,7 +32,6 @@ class _LoginPageState extends State<LoginPage> {
                     BoxShadow(blurRadius: 8.0),
                   ]),
               width: MediaQuery.of(context).size.width,
-              height: 500,
               child: Column(
                 children: [
                   const Padding(

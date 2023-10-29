@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:votacao_app/firebase_options.dart';
 import 'package:get/get.dart';
+import 'package:votacao_app/presenter/binding/cadastro_binding.dart';
+import 'package:votacao_app/presenter/binding/login_binding.dart';
 import 'package:votacao_app/util/theme_data.dart';
 
 import 'ui/cadastro/cadastro_page.dart';
@@ -31,11 +33,13 @@ class MyApp extends StatelessWidget {
           name: '/login',
           page: () => const LoginPage(),
           transition: Transition.fade,
+          binding: LoginBinding(),
         ),
         GetPage(
           name: '/cadastro',
           page: () => const CadastroPage(),
           transition: Transition.fade,
+          binding: CadastroBinding(),
         ),
       ],
     );

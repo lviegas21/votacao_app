@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class CadastrarButton extends StatelessWidget {
   const CadastrarButton({super.key});
@@ -6,7 +7,9 @@ class CadastrarButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed("/cadastro");
+        },
         child: const Text(
           "Cadastrar-se",
           style: TextStyle(
