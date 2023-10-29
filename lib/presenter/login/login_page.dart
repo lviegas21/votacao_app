@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:votacao_app/presenter/login/widget/login_button.dart';
-//import 'package:flutter/widgets.dart';
-//import 'package:votacao_app/presenter/login/widget/login_button.dart';
+import 'package:votacao_app/presenter/login/widget/text_fild.dart';
+import 'package:votacao_app/shared/componets/theme/app_color.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -14,7 +14,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 24, 30, 56),
+      backgroundColor: AppColor.backgroundLogin,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
             padding: const EdgeInsets.only(left: 20, right: 20, top: 50),
             child: Container(
               decoration: const BoxDecoration(
-                  color: Color.fromARGB(255, 32, 37, 61),
+                  color: AppColor.backgroudContainerLogin,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(60),
                       bottomRight: Radius.circular(60)),
@@ -46,33 +46,13 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(
                     height: 50,
                   ),
-                  SizedBox(
-                    width: 300,
-                    child: TextField(
-                      decoration: InputDecoration(
-                          prefixIcon: const Icon(Icons.person),
-                          hintText: 'Email',
-                          fillColor: Colors.white,
-                          filled: true,
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10))),
-                    ),
-                  ),
+                  InputField(
+                      prefixIcon: const Icon(Icons.person), hintText: "Email"),
                   const SizedBox(
                     height: 10,
                   ),
-                  SizedBox(
-                    width: 300,
-                    child: TextField(
-                      decoration: InputDecoration(
-                          prefixIcon: const Icon(Icons.lock),
-                          hintText: 'Senha',
-                          fillColor: Colors.white,
-                          filled: true,
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10))),
-                    ),
-                  ),
+                  InputField(
+                      prefixIcon: const Icon(Icons.lock), hintText: "Senha"),
                   const SizedBox(
                     height: 40,
                   ),
