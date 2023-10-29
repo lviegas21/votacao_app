@@ -1,7 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:votacao_app/firebase_options.dart';
-import 'package:votacao_app/presenter/login/login_page.dart';
+import 'package:get/get.dart';
+import 'package:votacao_app/util/theme_data.dart';
+
+import 'ui/cadastro/cadastro_page.dart';
+import 'ui/login/login_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,12 +21,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return GetMaterialApp(
+      title: 'Votação App',
       debugShowCheckedModeBanner: false,
-      home: Directionality(
-        textDirection: TextDirection.ltr,
-        child: LoginPage(),
-      ),
+      theme: makeAppTheme(),
+      initialRoute: '/login',
+      getPages: [
+        GetPage(
+          name: '/login',
+          page: () => const LoginPage(),
+          transition: Transition.fade,
+        ),
+        GetPage(
+          name: '/cadastro',
+          page: () => const CadastroPage(),
+          transition: Transition.fade,
+        ),
+      ],
     );
   }
 }
