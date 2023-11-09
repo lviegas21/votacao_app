@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:votacao_app/presenter/cadastro_page_controller.dart';
 
 import '../../shared/componets/theme/app_color.dart';
-import '../login/widget/text_fild.dart';
+import '../login/componets/text_fild.dart';
 import 'components/button_cadastro_components.dart';
 
 class CadastroPage extends StatelessWidget {

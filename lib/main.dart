@@ -1,9 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:votacao_app/firebase_options.dart';
 import 'package:get/get.dart';
+import 'package:votacao_app/firebase_options.dart';
 import 'package:votacao_app/presenter/binding/cadastro_binding.dart';
+import 'package:votacao_app/presenter/binding/home_binding.dart';
 import 'package:votacao_app/presenter/binding/login_binding.dart';
+import 'package:votacao_app/ui/home/home_page.dart';
 import 'package:votacao_app/util/theme_data.dart';
 
 import 'ui/cadastro/cadastro_page.dart';
@@ -41,6 +43,11 @@ class MyApp extends StatelessWidget {
           transition: Transition.fade,
           binding: CadastroBinding(),
         ),
+        GetPage(
+            name: '/home',
+            page: () => const HomePage(),
+            transition: Transition.fade,
+            binding: HomeBinding()),
       ],
     );
   }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:votacao_app/shared/componets/theme/app_color.dart';
-import 'package:votacao_app/ui/login/widget/cadastrar_button.dart';
-import 'package:votacao_app/ui/login/widget/login_button.dart';
-import 'package:votacao_app/ui/login/widget/text_fild.dart';
+import 'package:votacao_app/ui/login/componets/cadastrar_button.dart';
+import 'package:votacao_app/ui/login/componets/login_button.dart';
+import 'package:votacao_app/ui/login/componets/text_fild.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
