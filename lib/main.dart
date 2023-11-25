@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       title: 'Votação App',
       debugShowCheckedModeBanner: false,
       theme: makeAppTheme(),
-      initialRoute: '/login',
+      initialRoute: '/home',
       getPages: [
         GetPage(
           name: '/login',
